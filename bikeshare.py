@@ -1,4 +1,4 @@
-## TODO: import all necessary packages and function
+## TODO: import all necessary packages and functions
 from datetime import datetime
 import calendar
 import time
