@@ -1,4 +1,4 @@
-## TODO: import all necessary packages and functions
+## Imported all necesaary packages and functions
 from datetime import datetime
 import calendar
 import time
@@ -385,17 +385,17 @@ def statistics():
 
      
     
-    # What is the most popular month for start time?
+    # The most popular month for start time is found out
     if time_period == 'none':
         start_time = time.time()
         print(popular_month(df))
-        #TODO: call popular_month function and print the results
+        
         
         
         print("That took %s seconds." % (time.time() - start_time))
         print("Calculating the next statistic...")
 
-    # What is the most popular day of week (Monday, Tuesday, etc.) for start time?
+    #The most popular day of week (Monday, Tuesday, etc.) for start time
     if time_period == 'none' or time_period == 'month':
         start_time = time.time()
         print(popular_day(df))
@@ -407,8 +407,8 @@ def statistics():
     start_time = time.time()
          
     
-    # What is the most popular hour of day for start time?
-    # TODO: call popular_hour function and print the results
+    #  The most popular hour of day for start time
+   
     
     print(popular_hour(df))
 
@@ -417,8 +417,8 @@ def statistics():
     start_time = time.time()
     
 
-    # What is the total trip duration and average trip duration?
-    # TODO: call trip_duration function and print the results
+    # The total trip duration and average trip duration
+  
     print(trip_duration(df))
 
     print("That took %s seconds." % (time.time() - start_time))
@@ -427,8 +427,8 @@ def statistics():
     
     print(popular_stations(df))
  
-    # What is the most popular start station and most popular end station?
-    # TODO: call popular_stations function and print the results
+    # The most popular start station and most popular end station
+   
 
     print("That took %s seconds." % (time.time() - start_time))
     print("Calculating the next statistic...")
@@ -436,8 +436,8 @@ def statistics():
     
     print(popular_trip(df))
 
-    # What is the most popular trip?
-    # TODO: call popular_trip function and print the results
+    # The most popular trip
+ 
 
     print("That took %s seconds." % (time.time() - start_time))
     print("Calculating the next statistic...")
@@ -445,8 +445,8 @@ def statistics():
     
     print(users(df))
 
-    # What are the counts of each user type?
-    # TODO: call users function and print the results
+    # The counts of each user type.
+    
 
     print("That took %s seconds." % (time.time() - start_time))
     print("Calculating the next statistic...")
@@ -457,8 +457,8 @@ def statistics():
     else:
       print(gender(df))
 
-    # What are the counts of gender?
-    # TODO: call gender function and print the results
+    # The counts of gender
+    
 
     print("That took %s seconds." % (time.time() - start_time))
     print("Calculating the next statistic...")
@@ -468,16 +468,16 @@ def statistics():
     else:
       print(birth_years(df))
 
-    # What are the earliest (i.e. oldest user), most recent (i.e. youngest user), and
-    # most popular birth years?
-    # TODO: call birth_years function and print the results
+    #  The earliest (i.e. oldest user), most recent (i.e. youngest user), and
+    # most popular birth years
+   
 
     print("That took %s seconds." % (time.time() - start_time))
 
-    # Display five lines of data at a time if user specifies that they would like to
+    # Displayed five lines of data at a time if user specifies that they would like to
     display_data(df)
 
-    # Restart?
+    # Restart
     restart = input('\nWould you like to restart? Type \'yes\' or \'no\'.\n')
     if restart.lower() == 'yes':
         statistics()
